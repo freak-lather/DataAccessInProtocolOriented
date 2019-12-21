@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="NYAticleCell" customModule="NYArticles" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="FTA-hh-ULM">
+                        <rect key="frame" x="0.0" y="0.0" width="286" height="94.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3zN-Zd-Baq">
+                                <rect key="frame" x="0.0" y="0.0" width="286" height="94.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ppp-cG-Qg2">
+                                        <rect key="frame" x="0.0" y="12.5" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="IyT-y4-VNm"/>
+                                            <constraint firstAttribute="height" constant="70" id="mAq-9r-GHS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ett-F8-RGb">
+                                        <rect key="frame" x="78" y="27" width="208" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOc-dj-REl">
+                                                <rect key="frame" x="0.0" y="0.0" width="208" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HfJ-Vo-XCO">
+                                                <rect key="frame" x="0.0" y="20.5" width="208" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2I2-gw-v8A">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfo-6b-6Z1">
+                                                        <rect key="frame" x="131" y="0.0" width="77" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="2I2-gw-v8A" firstAttribute="width" secondItem="jfo-6b-6Z1" secondAttribute="width" multiplier="1.6" id="dCL-uT-x3b"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FTA-hh-ULM" secondAttribute="bottom" id="Url-LM-6Eg"/>
+                    <constraint firstAttribute="trailing" secondItem="FTA-hh-ULM" secondAttribute="trailing" id="dkN-9P-W4a"/>
+                    <constraint firstItem="FTA-hh-ULM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="oQt-aR-WTO"/>
+                    <constraint firstItem="FTA-hh-ULM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yTY-tG-DQ8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="articleImage" destination="Ppp-cG-Qg2" id="cvE-5K-n9f"/>
+                <outlet property="dateLabel" destination="jfo-6b-6Z1" id="JA1-3Y-r7X"/>
+                <outlet property="headingLabel" destination="NOc-dj-REl" id="Tje-AT-7TM"/>
+                <outlet property="subHeadingLabel" destination="2I2-gw-v8A" id="KNi-Ra-C6A"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="45.200892857142854"/>
+        </tableViewCell>
+    </objects>
+</document>

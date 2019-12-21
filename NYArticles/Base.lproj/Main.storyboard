@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o85-aX-CoK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IUa-fE-kpI">
+            <objects>
+                <navigationController id="o85-aX-CoK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hpJ-ZR-Vf2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6aL-7Z-Bkx" kind="relationship" relationship="rootViewController" id="x4R-tl-A8b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ZZ-h4-cwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-374" y="109"/>
+        </scene>
+        <!--NY Most Popular Article-->
+        <scene sceneID="lk0-xK-jG5">
+            <objects>
+                <viewController storyboardIdentifier="NYArticle" id="6aL-7Z-Bkx" customClass="NYArticleViewController" customModule="NYArticles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M9a-PJ-EpQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="azl-Wx-als">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lhq-TD-JSf" firstAttribute="bottom" secondItem="azl-Wx-als" secondAttribute="bottom" id="C0U-NG-uiV"/>
+                            <constraint firstItem="lhq-TD-JSf" firstAttribute="trailing" secondItem="azl-Wx-als" secondAttribute="trailing" id="CkJ-qF-HXH"/>
+                            <constraint firstItem="azl-Wx-als" firstAttribute="leading" secondItem="lhq-TD-JSf" secondAttribute="leading" id="Y8G-a8-des"/>
+                            <constraint firstItem="azl-Wx-als" firstAttribute="top" secondItem="lhq-TD-JSf" secondAttribute="top" id="ZBU-r6-nSI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lhq-TD-JSf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NY Most Popular Article" id="TfA-6Q-EbO">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="ii1-Vy-e1b"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="edit" id="Gc8-hC-zqC"/>
+                            <barButtonItem systemItem="search" id="t2c-Uc-Tck"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="articleTable" destination="azl-Wx-als" id="zXO-sM-ppr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaJ-0S-Mnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="116"/>
+        </scene>
+    </scenes>
+</document>
