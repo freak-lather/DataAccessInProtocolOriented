@@ -8,7 +8,7 @@ enum NetworkEnvironment {
     case staging
 }
 
-public enum GoogleApi {
+public enum ArticleApi {
     case search
     case popular(days: Int)
     case moviesReview
